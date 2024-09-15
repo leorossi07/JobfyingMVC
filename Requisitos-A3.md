@@ -100,9 +100,104 @@ DELETE - http://localhost:8080/api/candidaturas/5
 
 Saída: ```true```
 
+# REST API - CRUD de EMPRESAS
+
+## Cria uma nova empresa: C(CREATE) de CRUD
+
+POST - http://localhost:8080/api/empresas
+
+- [X] Implementado
+- [ ] Parcialmente implementado
+- [ ] Não implementado
+
+Entrada JSON
+
+```
+{
+    "cnpj": "12.345.888/0001-90",
+    "nome": "BlockBuster Corporation"
+}
+```
+
+Saída JSON
+
+```
+{
+    "id": 11,
+    "nome": "BlockBuster Corporation",
+    "cnpj": "12.345.888/0001-90"
+}
+```
+
+## Retorna lista de empresas: R(READ) do CRUD
+
+GET - http://localhost:8080/api/empresas
+
+- [X] Implementado
+- [ ] Parcialmente implementado
+- [ ] Não implementado
 
 
+## Retorna empresa por id : R(READ) do CRUD
 
+GET - http://localhost:8080/api/empresas/11
+
+- [X] Implementado
+- [ ] Parcialmente implementado
+- [ ] Não implementado
+
+Saída JSON
+
+```
+{
+    "id": 11,
+    "nome": "BlockBuster Corporation",
+    "cnpj": "12.345.888/0001-90"
+}
+
+```
+
+## Retorna a lista de todas as empresas da cidade de nome = {nome}
+
+- [ ] Implementado
+- [ ] Parcialmente implementado
+- [X] Não implementado
+
+## Atualiza a empresa de id = {id} [Update - CRUD]
+
+PUT - http://localhost:8080/api/empresas/11
+
+- [X] Implementado
+- [ ] Parcialmente implementado
+- [ ] Não implementado
+
+Entrada JSON
+
+```
+{
+    "cnpj": "12.345.788/0001-90",
+    "nome": "Tech Corporation"
+}
+```
+Saída JSON
+
+```
+{
+    "id": 11,
+    "nome": "Tech Corporation",
+    "cnpj": "12.345.788/0001-90"
+}
+```
+
+## Remove a empresa de id = {id} [Delete - CRUD]
+
+DELETE - - http://localhost:8080/api/empresas/11
+
+- [X] Implementado
+- [ ] Parcialmente implementado
+- [ ] Não implementado
+
+Saída é ```true```, a não ser que a empresa tenha vagas cadastradas.
 
 
 
