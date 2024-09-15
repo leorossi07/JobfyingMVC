@@ -199,6 +199,40 @@ DELETE - - http://localhost:8080/api/empresas/11
 
 Saída é ```true```, a não ser que a empresa tenha vagas cadastradas.
 
+# REST API - Vagas
+
+## Retorna a lista de vagas [Read - CRUD]
+
+GET http://localhost:8080/api/vagas
+
+- [X] Implementado
+- [ ] Parcialmente implementado
+- [ ] Não implementado
+
+## Retorna a vaga de id = {id} [Read - CRUD]
+
+GET http://localhost:8080/api/vagas/5
+
+- [X] Implementado
+- [ ] Parcialmente implementado
+- [ ] Não implementado
+
+Saída JSON
+
+```
+{
+    "id": 9,
+    "titulo": "Mobile Developer",
+    "descricao": "Desenvolver e otimizar aplicações móveis para iOS e Android.",
+    "cargaHoraria": 40,
+    "salario": 11500.00
+}
+```
+## Retorna a lista de vagas (em aberto) da empresa de id = {id} [Read - CRUD]
+
+- [ ] Implementado
+- [ ] Parcialmente implementado
+- [X] Não implementado
 
 
 
